@@ -17,7 +17,13 @@
             <li><a href="#">Link</a></li>
             <li><a href="#">Link</a></li>
         </ul>
-        <p class="navbar-text"><a href="/logoff/">@{user.name}</a></p>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/logoff/" role="button">
+                <img src="/img/profile-@{user.name}.svg" width="27px" />
+            </a>
+        </li> 
+        </ul>
     </nav>
 
     <div class="container">
